@@ -16,5 +16,11 @@ Note: For windows go to  - /<Kafka>/bin/windows
 <p>kafka-server-start.bat ../../config/server.properties</p>
 
 
-<h3>2. Create Kafka Topic - <u>users-topic</u> </h3>
+<h3>3. Create Kafka Topic - <u>users-topic</u> </h3>
+<p>kafka-topics.bat --create --topic users-topic --bootstrap-server localhost:9092</p>
+
+<h3>4. Kafka Consumer - <u>users-topic</u> </h3>
+<p>kafka-console-consumer.bat --topic users-topic --from-beginning --bootstrap-server localhost:9092</p>
+
+<h3>5. Create Kafka Topic - <u>users-topic</u> </h3>
 <p>kafka-topics.bat --create --topic users-topic --bootstrap-server localhost:9092</p>
